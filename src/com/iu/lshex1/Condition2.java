@@ -4,6 +4,7 @@ public class Condition2 {
 	public static void main(String[] args) {
 		//Git test
 		//if - else
+		//add
 		
 		double avg =52.3;
 		/*
