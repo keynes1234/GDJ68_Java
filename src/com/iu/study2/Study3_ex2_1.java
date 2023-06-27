@@ -10,6 +10,7 @@ public class Study3_ex2_1 {
 		int id = 1234;
 		int pw = 5678;
 		boolean loginResult;
+		int salary;
 		
 		//로그인 과정
 		//ID와 PW를 입력받아서 로그인 처리
@@ -39,12 +40,13 @@ public class Study3_ex2_1 {
 		if(loginResult) {
 		System.out.println("정규직은 1, 계약직은 2를 눌러주세요");
 		int job = sc.nextInt() ;
-		System.out.println("급여 입력");
-		int salary=sc.nextInt();
+		
 		
 		switch(job) {
 		case 1:
-			double tax1 = salary-salary*0.03;
+			System.out.println("급여 입력");
+			salary=sc.nextInt();
+			double tax1 = salary*0.03;
 			tax1 = tax1 + salary*0.02;
 			tax1 = tax1 +salary*0.01;
 			tax1 = tax1 +salary*0.01;
@@ -52,8 +54,11 @@ public class Study3_ex2_1 {
 			System.out.println("실 급여 : "+salary);
 			break;
 		case 2:
-			
-			System.out.println("원천징수 제외 후 급여는 "+(int)(salary*0.967)+"원입니다.");
+			System.out.println("급여 입력");
+			salary=sc.nextInt();
+			double tax2 = salary*0.033;
+			salary = (int)(salary-tax2);
+			System.out.println("실 급여 : "+salary);
 			break;
 		default:
 			System.out.println("잘못 눌렀습니다");
@@ -70,5 +75,7 @@ public class Study3_ex2_1 {
 	}
 }
 
+	
+	
 	
 	
