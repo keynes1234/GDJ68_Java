@@ -2,6 +2,7 @@ package com.iu.lshex1;
 
 public class Condition2 {
 	public static void main(String[] args) {
+		//Git test
 		//if - else
 		
 		double avg =52.3;
