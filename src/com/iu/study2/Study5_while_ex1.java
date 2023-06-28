@@ -151,14 +151,17 @@ public class Study5_while_ex1 {
 										}
 									}
 								}
-								
+								else {
+									System.out.println("잘못 눌렀습니다!");
+									break;
+								}
 								
 							}
 							
 							
 												
 					
-					if(lv%5==0) {
+				if(lv%5==0) {
 						gold=gold+(lv/5*1000);
 					}
 				}
@@ -170,6 +173,10 @@ public class Study5_while_ex1 {
 				else if(sel1==2) {
 					System.out.println("게임종료");
 					break;
+				}
+				else {
+					System.out.println("잘못 입력하였습니다.");
+					
 				}
 			}
 			break;
