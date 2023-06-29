@@ -15,14 +15,15 @@ public class Array6 {
 		//데이터타입 [] 변수명
 		//int[][] ars = new int[2][3];
 		
-		int [][]ars= {{1,2},{2,3}};
-		ars = new int[2][];
-		ars [0] = new int[3];
+		int [][]ars= new int [3][6];
+		//ars = new int[2][];
+		//ars [0] = new int[3];
 		ars [1] = new int[6];
 		//{{0,0,0}, {0,0,0,0,0,0}};
 		
 		for(int i=0;i<ars.length;i++) {
 			for(int j=0;j<ars[i].length;j++) {
+				System.out.println(+ i + "  "+ j);
 				System.out.println(ars[i][j]);
 			}
 		}
